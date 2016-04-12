@@ -24,6 +24,8 @@
 		BB154ECF1CDBA0D10090CF48 /* HallsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ECE1CDBA0D10090CF48 /* HallsViewController.m */; };
 		BB154ED21CDBA3EE0090CF48 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ED11CDBA3EE0090CF48 /* ChatRoomViewController.m */; };
 		BB154ED51CDBA41C0090CF48 /* FocusPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */; };
+		BB6A07DC1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6A07DB1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m */; };
+		BB6A07DE1CE431B4001662E3 /* 返回.png in Resources */ = {isa = PBXBuildFile; fileRef = BB6A07DD1CE431B4001662E3 /* 返回.png */; };
 		BB87366C1CDB763200621EB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87366B1CDB763200621EB4 /* main.m */; };
 		BB87366F1CDB763200621EB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87366E1CDB763200621EB4 /* AppDelegate.m */; };
 		BB8736721CDB763200621EB4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736711CDB763200621EB4 /* FirstViewController.m */; };
@@ -78,6 +80,9 @@
 		BB154ED11CDBA3EE0090CF48 /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
 		BB154ED31CDBA41C0090CF48 /* FocusPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusPointViewController.h; sourceTree = "<group>"; };
 		BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusPointViewController.m; sourceTree = "<group>"; };
+		BB6A07DA1CE42FD9001662E3 /* Kimi_CinemaNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kimi_CinemaNavigationController.h; sourceTree = "<group>"; };
+		BB6A07DB1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kimi_CinemaNavigationController.m; sourceTree = "<group>"; };
+		BB6A07DD1CE431B4001662E3 /* 返回.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "返回.png"; sourceTree = "<group>"; };
 		BB8736671CDB763200621EB4 /* FreeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB87366B1CDB763200621EB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB87366D1CDB763200621EB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -136,6 +141,7 @@
 		BB154EAC1CDB978B0090CF48 /* icon2 */ = {
 			isa = PBXGroup;
 			children = (
+				BB6A07DD1CE431B4001662E3 /* 返回.png */,
 				BB154EAD1CDB978B0090CF48 /* background.jpg */,
 				BB154EAE1CDB978B0090CF48 /* bottomtab1.png */,
 				BB154EAF1CDB978B0090CF48 /* bottomtab1_1.png */,
@@ -157,6 +163,8 @@
 		BB154EC91CDB9DCE0090CF48 /* Cinema */ = {
 			isa = PBXGroup;
 			children = (
+				BB6A07DA1CE42FD9001662E3 /* Kimi_CinemaNavigationController.h */,
+				BB6A07DB1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m */,
 				BB8736A51CDB776200621EB4 /* CinemaViewController.h */,
 				BB8736A61CDB776200621EB4 /* CinemaViewController.m */,
 				BB154ECD1CDBA0D10090CF48 /* HallsViewController.h */,
@@ -408,6 +416,7 @@
 				BB154EC31CDB978B0090CF48 /* bottomtab5.png in Resources */,
 				BB154EBD1CDB978B0090CF48 /* bottomtab1_1.png in Resources */,
 				BB154EC11CDB978B0090CF48 /* bottomtab4.png in Resources */,
+				BB6A07DE1CE431B4001662E3 /* 返回.png in Resources */,
 				BB8736781CDB763200621EB4 /* Main.storyboard in Resources */,
 				BB154EC21CDB978B0090CF48 /* bottomtab4_1.png in Resources */,
 				BB154EC41CDB978B0090CF48 /* bottomtab5_1.png in Resources */,
@@ -441,6 +450,7 @@
 				BB154ED21CDBA3EE0090CF48 /* ChatRoomViewController.m in Sources */,
 				BB87366F1CDB763200621EB4 /* AppDelegate.m in Sources */,
 				BB154ECF1CDBA0D10090CF48 /* HallsViewController.m in Sources */,
+				BB6A07DC1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m in Sources */,
 				BB8736B01CDB782000621EB4 /* MineViewController.m in Sources */,
 				BB8736AD1CDB77C000621EB4 /* DiscoveryViewController.m in Sources */,
 				BB8736AA1CDB778600621EB4 /* MovieViewController.m in Sources */,

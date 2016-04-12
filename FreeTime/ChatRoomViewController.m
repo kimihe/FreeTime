@@ -23,14 +23,14 @@
 {
     [super viewWillAppear:animated];
     
-    [self createCompletelyTransparentNavigationBar];
+    //[self createCompletelyTransparentNavigationBar];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     
-    [self createDefaultNavigationBar];
+    //[self createDefaultNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,6 +45,8 @@
                                                     forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
+    
+    
     self.navigationController.view.backgroundColor = [UIColor clearColor];
     self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
     //self.navigationController.navigationBar.alpha = 0.8;
@@ -64,7 +66,11 @@
 {
     [self.navigationController.navigationBar setBackgroundImage:nil
                                                     forBarMetrics:UIBarMetricsDefault];
+    
+    
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor]};
+    
+    
     self.navigationController.navigationBar.tintColor = [UIColor blueColor];
 }
 
@@ -78,11 +84,13 @@
 }
 */
 
+
 -(void)leftBarButtonItemAction:(UIBarButtonItem *)sender
 {
     NSLog(@"pop");
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 - (IBAction)cancelClicked:(UIBarButtonItem *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
