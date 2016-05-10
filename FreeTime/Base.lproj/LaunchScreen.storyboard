@@ -43,10 +43,10 @@
                                 <exclude reference="BsB-YB-9hB"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="l3d-eG-mne"/>
+                                <exclude reference="88L-sw-Kqp"/>
                                 <exclude reference="a1G-FO-Xth"/>
                                 <exclude reference="uXu-ZR-wcX"/>
-                                <exclude reference="88L-sw-Kqp"/>
-                                <exclude reference="l3d-eG-mne"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -55,10 +55,10 @@
                                 <include reference="BsB-YB-9hB"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="l3d-eG-mne"/>
+                                <include reference="88L-sw-Kqp"/>
                                 <include reference="a1G-FO-Xth"/>
                                 <include reference="uXu-ZR-wcX"/>
-                                <include reference="88L-sw-Kqp"/>
-                                <include reference="l3d-eG-mne"/>
                             </mask>
                         </variation>
                     </view>
