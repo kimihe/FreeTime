@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB154EBB1CDB978B0090CF48 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB154EAD1CDB978B0090CF48 /* background.jpg */; };
+		BB154EBC1CDB978B0090CF48 /* bottomtab1.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EAE1CDB978B0090CF48 /* bottomtab1.png */; };
+		BB154EBD1CDB978B0090CF48 /* bottomtab1_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EAF1CDB978B0090CF48 /* bottomtab1_1.png */; };
+		BB154EBE1CDB978B0090CF48 /* bottomtab2.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB01CDB978B0090CF48 /* bottomtab2.png */; };
+		BB154EBF1CDB978B0090CF48 /* bottomtab2_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB11CDB978B0090CF48 /* bottomtab2_1.png */; };
+		BB154EC01CDB978B0090CF48 /* bottomtab3.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB21CDB978B0090CF48 /* bottomtab3.png */; };
+		BB154EC11CDB978B0090CF48 /* bottomtab4.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB31CDB978B0090CF48 /* bottomtab4.png */; };
+		BB154EC21CDB978B0090CF48 /* bottomtab4_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB41CDB978B0090CF48 /* bottomtab4_1.png */; };
+		BB154EC31CDB978B0090CF48 /* bottomtab5.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB51CDB978B0090CF48 /* bottomtab5.png */; };
+		BB154EC41CDB978B0090CF48 /* bottomtab5_1.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB61CDB978B0090CF48 /* bottomtab5_1.png */; };
+		BB154EC51CDB978B0090CF48 /* iconfont-jiantou-revolve.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB71CDB978B0090CF48 /* iconfont-jiantou-revolve.png */; };
+		BB154EC61CDB978B0090CF48 /* iconfont-jiantou.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB81CDB978B0090CF48 /* iconfont-jiantou.png */; };
+		BB154EC71CDB978B0090CF48 /* peetime.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EB91CDB978B0090CF48 /* peetime.png */; };
+		BB154EC81CDB978B0090CF48 /* turnback.png in Resources */ = {isa = PBXBuildFile; fileRef = BB154EBA1CDB978B0090CF48 /* turnback.png */; };
+		BB154ECF1CDBA0D10090CF48 /* HallsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ECE1CDBA0D10090CF48 /* HallsViewController.m */; };
+		BB154ED21CDBA3EE0090CF48 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ED11CDBA3EE0090CF48 /* ChatRoomViewController.m */; };
+		BB154ED51CDBA41C0090CF48 /* FocusPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */; };
 		BB87366C1CDB763200621EB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87366B1CDB763200621EB4 /* main.m */; };
 		BB87366F1CDB763200621EB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87366E1CDB763200621EB4 /* AppDelegate.m */; };
 		BB8736721CDB763200621EB4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736711CDB763200621EB4 /* FirstViewController.m */; };
@@ -16,6 +33,11 @@
 		BB87367D1CDB763200621EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB87367B1CDB763200621EB4 /* LaunchScreen.storyboard */; };
 		BB8736881CDB763200621EB4 /* FreeTimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736871CDB763200621EB4 /* FreeTimeTests.m */; };
 		BB8736931CDB763200621EB4 /* FreeTimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736921CDB763200621EB4 /* FreeTimeUITests.m */; };
+		BB8736A41CDB771E00621EB4 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736A31CDB771E00621EB4 /* RootViewController.m */; };
+		BB8736A71CDB776200621EB4 /* CinemaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736A61CDB776200621EB4 /* CinemaViewController.m */; };
+		BB8736AA1CDB778600621EB4 /* MovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736A91CDB778600621EB4 /* MovieViewController.m */; };
+		BB8736AD1CDB77C000621EB4 /* DiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736AC1CDB77C000621EB4 /* DiscoveryViewController.m */; };
+		BB8736B01CDB782000621EB4 /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736AF1CDB782000621EB4 /* MineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +58,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB154EAD1CDB978B0090CF48 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+		BB154EAE1CDB978B0090CF48 /* bottomtab1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab1.png; sourceTree = "<group>"; };
+		BB154EAF1CDB978B0090CF48 /* bottomtab1_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab1_1.png; sourceTree = "<group>"; };
+		BB154EB01CDB978B0090CF48 /* bottomtab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab2.png; sourceTree = "<group>"; };
+		BB154EB11CDB978B0090CF48 /* bottomtab2_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab2_1.png; sourceTree = "<group>"; };
+		BB154EB21CDB978B0090CF48 /* bottomtab3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab3.png; sourceTree = "<group>"; };
+		BB154EB31CDB978B0090CF48 /* bottomtab4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab4.png; sourceTree = "<group>"; };
+		BB154EB41CDB978B0090CF48 /* bottomtab4_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab4_1.png; sourceTree = "<group>"; };
+		BB154EB51CDB978B0090CF48 /* bottomtab5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab5.png; sourceTree = "<group>"; };
+		BB154EB61CDB978B0090CF48 /* bottomtab5_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottomtab5_1.png; sourceTree = "<group>"; };
+		BB154EB71CDB978B0090CF48 /* iconfont-jiantou-revolve.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jiantou-revolve.png"; sourceTree = "<group>"; };
+		BB154EB81CDB978B0090CF48 /* iconfont-jiantou.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-jiantou.png"; sourceTree = "<group>"; };
+		BB154EB91CDB978B0090CF48 /* peetime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peetime.png; sourceTree = "<group>"; };
+		BB154EBA1CDB978B0090CF48 /* turnback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turnback.png; sourceTree = "<group>"; };
+		BB154ECD1CDBA0D10090CF48 /* HallsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HallsViewController.h; sourceTree = "<group>"; };
+		BB154ECE1CDBA0D10090CF48 /* HallsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HallsViewController.m; sourceTree = "<group>"; };
+		BB154ED01CDBA3EE0090CF48 /* ChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
+		BB154ED11CDBA3EE0090CF48 /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
+		BB154ED31CDBA41C0090CF48 /* FocusPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusPointViewController.h; sourceTree = "<group>"; };
+		BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusPointViewController.m; sourceTree = "<group>"; };
 		BB8736671CDB763200621EB4 /* FreeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB87366B1CDB763200621EB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB87366D1CDB763200621EB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +96,16 @@
 		BB87368E1CDB763200621EB4 /* FreeTimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeTimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8736921CDB763200621EB4 /* FreeTimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FreeTimeUITests.m; sourceTree = "<group>"; };
 		BB8736941CDB763200621EB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB8736A21CDB771E00621EB4 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		BB8736A31CDB771E00621EB4 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		BB8736A51CDB776200621EB4 /* CinemaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinemaViewController.h; sourceTree = "<group>"; };
+		BB8736A61CDB776200621EB4 /* CinemaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaViewController.m; sourceTree = "<group>"; };
+		BB8736A81CDB778600621EB4 /* MovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieViewController.h; sourceTree = "<group>"; };
+		BB8736A91CDB778600621EB4 /* MovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieViewController.m; sourceTree = "<group>"; };
+		BB8736AB1CDB77C000621EB4 /* DiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoveryViewController.h; sourceTree = "<group>"; };
+		BB8736AC1CDB77C000621EB4 /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
+		BB8736AE1CDB782000621EB4 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
+		BB8736AF1CDB782000621EB4 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +133,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB154EAC1CDB978B0090CF48 /* icon2 */ = {
+			isa = PBXGroup;
+			children = (
+				BB154EAD1CDB978B0090CF48 /* background.jpg */,
+				BB154EAE1CDB978B0090CF48 /* bottomtab1.png */,
+				BB154EAF1CDB978B0090CF48 /* bottomtab1_1.png */,
+				BB154EB01CDB978B0090CF48 /* bottomtab2.png */,
+				BB154EB11CDB978B0090CF48 /* bottomtab2_1.png */,
+				BB154EB21CDB978B0090CF48 /* bottomtab3.png */,
+				BB154EB31CDB978B0090CF48 /* bottomtab4.png */,
+				BB154EB41CDB978B0090CF48 /* bottomtab4_1.png */,
+				BB154EB51CDB978B0090CF48 /* bottomtab5.png */,
+				BB154EB61CDB978B0090CF48 /* bottomtab5_1.png */,
+				BB154EB71CDB978B0090CF48 /* iconfont-jiantou-revolve.png */,
+				BB154EB81CDB978B0090CF48 /* iconfont-jiantou.png */,
+				BB154EB91CDB978B0090CF48 /* peetime.png */,
+				BB154EBA1CDB978B0090CF48 /* turnback.png */,
+			);
+			path = icon2;
+			sourceTree = "<group>";
+		};
+		BB154EC91CDB9DCE0090CF48 /* Cinema */ = {
+			isa = PBXGroup;
+			children = (
+				BB8736A51CDB776200621EB4 /* CinemaViewController.h */,
+				BB8736A61CDB776200621EB4 /* CinemaViewController.m */,
+				BB154ECD1CDBA0D10090CF48 /* HallsViewController.h */,
+				BB154ECE1CDBA0D10090CF48 /* HallsViewController.m */,
+				BB154ED01CDBA3EE0090CF48 /* ChatRoomViewController.h */,
+				BB154ED11CDBA3EE0090CF48 /* ChatRoomViewController.m */,
+				BB154ED31CDBA41C0090CF48 /* FocusPointViewController.h */,
+				BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */,
+			);
+			name = Cinema;
+			sourceTree = "<group>";
+		};
+		BB154ECA1CDB9DEA0090CF48 /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				BB8736A81CDB778600621EB4 /* MovieViewController.h */,
+				BB8736A91CDB778600621EB4 /* MovieViewController.m */,
+			);
+			name = Movie;
+			sourceTree = "<group>";
+		};
+		BB154ECB1CDB9E060090CF48 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				BB8736AB1CDB77C000621EB4 /* DiscoveryViewController.h */,
+				BB8736AC1CDB77C000621EB4 /* DiscoveryViewController.m */,
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		BB154ECC1CDB9E190090CF48 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				BB8736AE1CDB782000621EB4 /* MineViewController.h */,
+				BB8736AF1CDB782000621EB4 /* MineViewController.m */,
+			);
+			name = Mine;
+			sourceTree = "<group>";
+		};
 		BB87365E1CDB763200621EB4 = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +219,9 @@
 		BB8736691CDB763200621EB4 /* FreeTime */ = {
 			isa = PBXGroup;
 			children = (
+				BB8736A11CDB76B100621EB4 /* ViewController */,
+				BB8736A01CDB769400621EB4 /* Model */,
+				BB8736B11CDB7A0C00621EB4 /* Resources */,
 				BB87366D1CDB763200621EB4 /* AppDelegate.h */,
 				BB87366E1CDB763200621EB4 /* AppDelegate.m */,
 				BB8736701CDB763200621EB4 /* FirstViewController.h */,
@@ -143,6 +261,34 @@
 				BB8736941CDB763200621EB4 /* Info.plist */,
 			);
 			path = FreeTimeUITests;
+			sourceTree = "<group>";
+		};
+		BB8736A01CDB769400621EB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BB8736A11CDB76B100621EB4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB8736A21CDB771E00621EB4 /* RootViewController.h */,
+				BB8736A31CDB771E00621EB4 /* RootViewController.m */,
+				BB154EC91CDB9DCE0090CF48 /* Cinema */,
+				BB154ECA1CDB9DEA0090CF48 /* Movie */,
+				BB154ECB1CDB9E060090CF48 /* Discovery */,
+				BB154ECC1CDB9E190090CF48 /* Mine */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		BB8736B11CDB7A0C00621EB4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB154EAC1CDB978B0090CF48 /* icon2 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +358,7 @@
 				TargetAttributes = {
 					BB8736661CDB763200621EB4 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AA2X2FK35G;
 					};
 					BB8736821CDB763200621EB4 = {
 						CreatedOnToolsVersion = 7.3;
@@ -249,8 +396,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB87367D1CDB763200621EB4 /* LaunchScreen.storyboard in Resources */,
+				BB154EBF1CDB978B0090CF48 /* bottomtab2_1.png in Resources */,
+				BB154EBB1CDB978B0090CF48 /* background.jpg in Resources */,
+				BB154EC61CDB978B0090CF48 /* iconfont-jiantou.png in Resources */,
+				BB154EBC1CDB978B0090CF48 /* bottomtab1.png in Resources */,
+				BB154EC81CDB978B0090CF48 /* turnback.png in Resources */,
+				BB154EC51CDB978B0090CF48 /* iconfont-jiantou-revolve.png in Resources */,
+				BB154EBE1CDB978B0090CF48 /* bottomtab2.png in Resources */,
+				BB154EC71CDB978B0090CF48 /* peetime.png in Resources */,
 				BB87367A1CDB763200621EB4 /* Assets.xcassets in Resources */,
+				BB154EC31CDB978B0090CF48 /* bottomtab5.png in Resources */,
+				BB154EBD1CDB978B0090CF48 /* bottomtab1_1.png in Resources */,
+				BB154EC11CDB978B0090CF48 /* bottomtab4.png in Resources */,
 				BB8736781CDB763200621EB4 /* Main.storyboard in Resources */,
+				BB154EC21CDB978B0090CF48 /* bottomtab4_1.png in Resources */,
+				BB154EC41CDB978B0090CF48 /* bottomtab5_1.png in Resources */,
+				BB154EC01CDB978B0090CF48 /* bottomtab3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,9 +437,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8736751CDB763200621EB4 /* SecondViewController.m in Sources */,
+				BB8736A71CDB776200621EB4 /* CinemaViewController.m in Sources */,
+				BB154ED21CDBA3EE0090CF48 /* ChatRoomViewController.m in Sources */,
 				BB87366F1CDB763200621EB4 /* AppDelegate.m in Sources */,
+				BB154ECF1CDBA0D10090CF48 /* HallsViewController.m in Sources */,
+				BB8736B01CDB782000621EB4 /* MineViewController.m in Sources */,
+				BB8736AD1CDB77C000621EB4 /* DiscoveryViewController.m in Sources */,
+				BB8736AA1CDB778600621EB4 /* MovieViewController.m in Sources */,
 				BB8736721CDB763200621EB4 /* FirstViewController.m in Sources */,
 				BB87366C1CDB763200621EB4 /* main.m in Sources */,
+				BB154ED51CDBA41C0090CF48 /* FocusPointViewController.m in Sources */,
+				BB8736A41CDB771E00621EB4 /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,10 +590,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FreeTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Kimi.FreeTime;
+				PRODUCT_BUNDLE_IDENTIFIER = "com-kecheng-ismarttools233";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eca772b5-aa81-45fd-9d4d-fdcf0389b87e";
 			};
 			name = Debug;
 		};
@@ -432,10 +603,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = FreeTime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Kimi.FreeTime;
+				PRODUCT_BUNDLE_IDENTIFIER = "com-kecheng-ismarttools233";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6216c38a-bb7e-4663-a577-ebdcee272f86";
 			};
 			name = Release;
 		};
@@ -504,6 +677,7 @@
 				BB8736991CDB763200621EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB87369A1CDB763200621EB4 /* Build configuration list for PBXNativeTarget "FreeTimeTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +686,7 @@
 				BB87369C1CDB763200621EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB87369D1CDB763200621EB4 /* Build configuration list for PBXNativeTarget "FreeTimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +695,7 @@
 				BB87369F1CDB763200621EB4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
