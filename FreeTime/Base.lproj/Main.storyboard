@@ -94,7 +94,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="YPD-ru-oQJ" kind="show" id="xeb-KU-UJp"/>
+                                            <segue destination="YPD-ru-oQJ" kind="show" id="fVq-Gy-VIH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -235,7 +235,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="IWJ-8V-Z71" kind="show" id="xfj-Vo-98n"/>
+                                            <segue destination="722-2B-440" kind="show" id="sOk-Ak-MNt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -348,7 +348,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOw-Ll-STh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2872.5" y="-1191.75"/>
+            <point key="canvasLocation" x="3790.5" y="-1191.75"/>
         </scene>
         <!--尿点时常-->
         <scene sceneID="g87-6n-dJG">
@@ -367,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pjO-2C-v9j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3555" y="-1191.75"/>
+            <point key="canvasLocation" x="4473" y="-1191.75"/>
         </scene>
         <!--Discovery View Controller-->
         <scene sceneID="6jy-4G-sP2">
@@ -543,6 +543,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxd-gG-upM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="666" y="774.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4C0-DP-4dy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="722-2B-440" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CH6-kW-GO5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="IWJ-8V-Z71" kind="relationship" relationship="rootViewController" id="DPY-vW-MP3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azb-Na-mxJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2872.5" y="-1191.75"/>
         </scene>
     </scenes>
     <resources>
