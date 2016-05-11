@@ -53,7 +53,9 @@
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     
     
-    //self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    //self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonItemAction:)];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonItemAction:)];
+    //self.navigationItem.leftItemsSupplementBackButton = YES;
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
 }
 
@@ -76,6 +78,11 @@
 }
 */
 
+-(void)leftBarButtonItemAction:(UIBarButtonItem *)sender
+{
+    NSLog(@"pop");
+    [self.navigationController popViewControllerAnimated:YES];
+}
 - (IBAction)cancelClicked:(UIBarButtonItem *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
