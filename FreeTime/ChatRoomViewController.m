@@ -23,14 +23,15 @@
 {
     [super viewWillAppear:animated];
     
-    //[self createCompletelyTransparentNavigationBar];
+    [self initNavigationBar];
+    [self initTabBar];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     
-    //[self createDefaultNavigationBar];
+    [self resetNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,39 +40,38 @@
 }
 
 //全透明，一般在viewWillAppear
-- (void)createCompletelyTransparentNavigationBar
+- (void)initNavigationBar
 {
     [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
-                                                    forBarMetrics:UIBarMetricsDefault];
+                             forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
     
     
-    self.navigationController.view.backgroundColor = [UIColor clearColor];
-    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    //            self.view.backgroundColor = [UIColor clearColor];
+    //            self.navigationBar.backgroundColor = [UIColor clearColor];
     //self.navigationController.navigationBar.alpha = 0.8;
     
     
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     
+    //            viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonItemAction:)];
+    //            //解决自定义了leftBarbuttonItem左滑返回手势失效了的问题
+    //            self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
     
-    //self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonItemAction:)];
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(leftBarButtonItemAction:)];
     //self.navigationItem.leftItemsSupplementBackButton = YES;
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];}
+
+- (void)initTabBar
+{
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 //恢复成默认，一般在viewWillDisappear
-- (void)createDefaultNavigationBar
+- (void)resetNavigationBar
 {
     [self.navigationController.navigationBar setBackgroundImage:nil
                                                     forBarMetrics:UIBarMetricsDefault];
-    
-    
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor]};
-    
-    
-    self.navigationController.navigationBar.tintColor = [UIColor blueColor];
 }
 
 /*

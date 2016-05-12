@@ -6,6 +6,12 @@
 //  Copyright © 2016年 周祺华. All rights reserved.
 //
 
+
+/*
+ if you want to control this navigation by replacing UINavigationController with Kimi_CinemaNavigationController,
+ just override it!
+ */
+
 #import "Kimi_CinemaNavigationController.h"
 
 @interface Kimi_CinemaNavigationController ()

@@ -94,7 +94,7 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="YPD-ru-oQJ" kind="show" id="fVq-Gy-VIH"/>
+                                            <segue destination="YPD-ru-oQJ" kind="show" identifier="pushToHallsSegue" id="fVq-Gy-VIH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -504,7 +504,7 @@
         <!--影院-->
         <scene sceneID="sIy-kR-KL6">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1FI-Ba-l3E" customClass="Kimi_CinemaNavigationController" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1FI-Ba-l3E" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="影院" image="bottomtab1.png" selectedImage="bottomtab1_1.png" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9iu-ot-Jun">

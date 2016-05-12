@@ -8,6 +8,8 @@
 
 #import "HallsViewController.h"
 
+#import "Defines.h"
+
 @interface HallsViewController ()
 
 @end
@@ -23,12 +25,25 @@
 {
     [super viewWillAppear:animated];
     
-    //self.tabBarController.tabBar.hidden = YES;
+    [self initNavigationBar];
+    [self initTabBar];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)initNavigationBar
+{
+    self.navigationController.navigationBar.barTintColor = RGBA(90.0, 90.0, 90.0, 1.0);
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+}
+
+- (void)initTabBar
+{
+    self.tabBarController.tabBar.hidden = YES;
 }
 
 /*

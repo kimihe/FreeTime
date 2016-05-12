@@ -111,6 +111,7 @@
 		BB8736AC1CDB77C000621EB4 /* DiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoveryViewController.m; sourceTree = "<group>"; };
 		BB8736AE1CDB782000621EB4 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		BB8736AF1CDB782000621EB4 /* MineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
+		BB97C53E1CE4B02400D59245 /* Defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Defines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +230,7 @@
 			children = (
 				BB8736A11CDB76B100621EB4 /* ViewController */,
 				BB8736A01CDB769400621EB4 /* Model */,
+				BB97C53D1CE4AFD800D59245 /* Publics */,
 				BB8736B11CDB7A0C00621EB4 /* Resources */,
 				BB87366D1CDB763200621EB4 /* AppDelegate.h */,
 				BB87366E1CDB763200621EB4 /* AppDelegate.m */,
@@ -297,6 +299,14 @@
 				BB154EAC1CDB978B0090CF48 /* icon2 */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		BB97C53D1CE4AFD800D59245 /* Publics */ = {
+			isa = PBXGroup;
+			children = (
+				BB97C53E1CE4B02400D59245 /* Defines.h */,
+			);
+			name = Publics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
