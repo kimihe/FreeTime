@@ -60,7 +60,14 @@
     //            self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
     
     //self.navigationItem.leftItemsSupplementBackButton = YES;
-    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];}
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+
+//    UIBarButtonItem *b1 = [[UIBarButtonItem alloc]initWithTitle:@"111" style:UIBarButtonItemStylePlain target:nil action:nil];
+//    UIBarButtonItem *b2 = [[UIBarButtonItem alloc]initWithTitle:@"222" style:UIBarButtonItemStylePlain target:nil action:nil];
+//    UIBarButtonItem *b3 = [[UIBarButtonItem alloc]initWithTitle:@"333" style:UIBarButtonItemStylePlain target:nil action:nil];
+//    NSArray *a = [NSArray arrayWithObjects:b1,b2,b3, nil];
+//    self.navigationItem.leftBarButtonItems = a;
+}
 
 - (void)initTabBar
 {
