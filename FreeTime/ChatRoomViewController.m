@@ -67,6 +67,7 @@
 //    UIBarButtonItem *b3 = [[UIBarButtonItem alloc]initWithTitle:@"333" style:UIBarButtonItemStylePlain target:nil action:nil];
 //    NSArray *a = [NSArray arrayWithObjects:b1,b2,b3, nil];
 //    self.navigationItem.leftBarButtonItems = a;
+    
 }
 
 - (void)initTabBar
