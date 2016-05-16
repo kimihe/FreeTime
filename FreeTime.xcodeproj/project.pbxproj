@@ -11,10 +11,9 @@
 		BB154ED21CDBA3EE0090CF48 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ED11CDBA3EE0090CF48 /* ChatRoomViewController.m */; };
 		BB154ED51CDBA41C0090CF48 /* FocusPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */; };
 		BB6A07DC1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6A07DB1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m */; };
+		BB6D23CF1CE969CF00FC5BC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB6D23CE1CE969CF00FC5BC4 /* README.md */; };
 		BB87366C1CDB763200621EB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87366B1CDB763200621EB4 /* main.m */; };
 		BB87366F1CDB763200621EB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87366E1CDB763200621EB4 /* AppDelegate.m */; };
-		BB8736721CDB763200621EB4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736711CDB763200621EB4 /* FirstViewController.m */; };
-		BB8736751CDB763200621EB4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8736741CDB763200621EB4 /* SecondViewController.m */; };
 		BB8736781CDB763200621EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8736761CDB763200621EB4 /* Main.storyboard */; };
 		BB87367A1CDB763200621EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB8736791CDB763200621EB4 /* Assets.xcassets */; };
 		BB87367D1CDB763200621EB4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB87367B1CDB763200621EB4 /* LaunchScreen.storyboard */; };
@@ -78,14 +77,11 @@
 		BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusPointViewController.m; sourceTree = "<group>"; };
 		BB6A07DA1CE42FD9001662E3 /* Kimi_CinemaNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kimi_CinemaNavigationController.h; sourceTree = "<group>"; };
 		BB6A07DB1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kimi_CinemaNavigationController.m; sourceTree = "<group>"; };
+		BB6D23CE1CE969CF00FC5BC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		BB8736671CDB763200621EB4 /* FreeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB87366B1CDB763200621EB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB87366D1CDB763200621EB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BB87366E1CDB763200621EB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BB8736701CDB763200621EB4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		BB8736711CDB763200621EB4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		BB8736731CDB763200621EB4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		BB8736741CDB763200621EB4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		BB8736771CDB763200621EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB8736791CDB763200621EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB87367C1CDB763200621EB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -210,6 +206,7 @@
 				BB8736861CDB763200621EB4 /* FreeTimeTests */,
 				BB8736911CDB763200621EB4 /* FreeTimeUITests */,
 				BB8736681CDB763200621EB4 /* Products */,
+				BB6D23CE1CE969CF00FC5BC4 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,10 +229,6 @@
 				BB8736B11CDB7A0C00621EB4 /* Resources */,
 				BB87366D1CDB763200621EB4 /* AppDelegate.h */,
 				BB87366E1CDB763200621EB4 /* AppDelegate.m */,
-				BB8736701CDB763200621EB4 /* FirstViewController.h */,
-				BB8736711CDB763200621EB4 /* FirstViewController.m */,
-				BB8736731CDB763200621EB4 /* SecondViewController.h */,
-				BB8736741CDB763200621EB4 /* SecondViewController.m */,
 				BB8736761CDB763200621EB4 /* Main.storyboard */,
 				BB8736791CDB763200621EB4 /* Assets.xcassets */,
 				BB87367B1CDB763200621EB4 /* LaunchScreen.storyboard */,
@@ -495,7 +488,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB8736751CDB763200621EB4 /* SecondViewController.m in Sources */,
 				BB8736A71CDB776200621EB4 /* CinemaViewController.m in Sources */,
 				BB154ED21CDBA3EE0090CF48 /* ChatRoomViewController.m in Sources */,
 				BB87366F1CDB763200621EB4 /* AppDelegate.m in Sources */,
@@ -504,7 +496,7 @@
 				BB8736B01CDB782000621EB4 /* MineViewController.m in Sources */,
 				BB8736AD1CDB77C000621EB4 /* DiscoveryViewController.m in Sources */,
 				BB8736AA1CDB778600621EB4 /* MovieViewController.m in Sources */,
-				BB8736721CDB763200621EB4 /* FirstViewController.m in Sources */,
+				BB6D23CF1CE969CF00FC5BC4 /* README.md in Sources */,
 				BB87366C1CDB763200621EB4 /* main.m in Sources */,
 				BB154ED51CDBA41C0090CF48 /* FocusPointViewController.m in Sources */,
 				BB8736A41CDB771E00621EB4 /* RootViewController.m in Sources */,

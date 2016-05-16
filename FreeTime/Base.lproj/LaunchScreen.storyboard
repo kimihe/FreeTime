@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -23,14 +24,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016年 周祺华. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsB-YB-9hB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2016 周祺华. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsB-YB-9hB">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="32" y="762" width="337" height="18"/>
-                                </variation>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -38,6 +36,7 @@
                             <constraint firstItem="BsB-YB-9hB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="88L-sw-Kqp"/>
                             <constraint firstItem="QVO-bx-Gyk" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="a1G-FO-Xth"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="BsB-YB-9hB" secondAttribute="bottom" constant="20" id="l3d-eG-mne"/>
+                            <constraint firstItem="BsB-YB-9hB" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="9:10" id="uWP-Pz-WGp"/>
                             <constraint firstItem="QVO-bx-Gyk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="uXu-ZR-wcX"/>
                         </constraints>
                         <variation key="default">
@@ -46,10 +45,11 @@
                                 <exclude reference="BsB-YB-9hB"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="l3d-eG-mne"/>
-                                <exclude reference="88L-sw-Kqp"/>
                                 <exclude reference="a1G-FO-Xth"/>
                                 <exclude reference="uXu-ZR-wcX"/>
+                                <exclude reference="88L-sw-Kqp"/>
+                                <exclude reference="uWP-Pz-WGp"/>
+                                <exclude reference="l3d-eG-mne"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -58,10 +58,11 @@
                                 <include reference="BsB-YB-9hB"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="l3d-eG-mne"/>
-                                <include reference="88L-sw-Kqp"/>
                                 <include reference="a1G-FO-Xth"/>
                                 <include reference="uXu-ZR-wcX"/>
+                                <include reference="88L-sw-Kqp"/>
+                                <include reference="uWP-Pz-WGp"/>
+                                <include reference="l3d-eG-mne"/>
                             </mask>
                         </variation>
                     </view>
