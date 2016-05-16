@@ -1,0 +1,94 @@
+{
+"error_code" : 0;
+"reason" : "success";
+"result" :     [
+              {
+              "address" : "\U5357\U4eac\U5e02\U9f13\U697c\U533a\U4e2d\U592e\U8def201\U53f7\U91d1\U8302\U6c47\U5e7f\U573a\Uff08\U539f\U56fd\U9645\U5e7f\U573a\Uff096\U697c\U5317\U533a";
+              "cinemaName" : "\U5357\U4eacUME\U56fd\U9645\U5f71\U57ce\Uff08\U7384\U6b66\U95e8\U5e97\Uff09";
+              "cityName" : "\U5357\U4eac";
+              "distance" : 378;
+              "id" : 979;
+              "latitude" : "32.07964";
+              "longitude" : "118.79";
+              "telephone" : "025-68518080";
+              "trafficRoutes" : "1\U30018\U300115\U300122\U300125\U300128\U300130\U300133\U300138\U300156\U300174\U3001114\U3001\U6e381\U3001\U5730\U94c11\U53f7\U7ebf\U7384\U6b66\U7ad9";
+              },
+              {
+              "address" : "\U5357\U4eac\U5e02\U4e2d\U5c71\U5317\U8def110\U53f7";
+              "cinemaName" : "\U548c\U5e73\U5f71\U89c6\U5a31\U4e50\U57ce";
+              "cityName" : "\U5357\U4eac";
+              "distance" : 969;
+              "id" : 973;
+              "latitude" : "32.07412";
+              "longitude" : "118.7805";
+              "telephone" : "025-83227222";
+              "trafficRoutes" : "\U4e5831.34.16.100.22.47.83\U8def\Uff0c\U5728 \U5c71\U897f\U8def \U4e0b\U8f66\Uff0c\U6b65\U884c\U81f3\U5357\U4eac\U548c\U5e73\U5f71\U89c6\U5a31\U4e50\U57ce\n";
+              },
+              {
+              "address" : "\U5357\U4eac\U5e02\U4e2d\U5c71\U5317\U8def6\U53f7\U7eff\U5730\U4e2d\U5fc3\U7d2b\U5cf0\U8d2d\U7269\U5e7f\U573a5-6\U5c42";
+              "cinemaName" : "\U5362\U7c73\U57c3\U5357\U4eac\U7eff\U5730\U5f71\U57ce";
+              "cityName" : "\U5357\U4eac";
+              "distance" : 1082;
+              "id" : 970;
+              "latitude" : "32.06657";
+              "longitude" : "118.7897";
+              "telephone" : "";
+              "trafficRoutes" : "\U5728\U5730\U94c11\U53f7\U7ebf\U9f13\U697c\U7ad9\U4e0b4A\U51fa\U53e3\n\U516c\U4ea4\U8def\U7ebf\Uff1a1\U8def\U300116\U8def\U300125\U8def\U300128\U8def\U300131\U8def\U300134\U8def\U300135\U8def\U300138\U8def\U300147\U8def\U3001100\U8def\U516c\U8f66\U4e8e\U9f13\U697c\U7ad9\U4e0b\n";
+              },
+              {
+              "address" : "\U5357\U4eac\U5e02\U7384\U6b66\U533a\U5317\U4eac\U4e1c\U8def2\U53f7\U8354\U679d\U5e7f\U573a6\U697c\Uff08\U6c5f\U82cf\U7701\U7535\U89c6\U53f0\U5185\Uff09";
+              "cinemaName" : "\U5e78\U798f\U84dd\U6d77\U56fd\U9645\U5f71\U57ce\U8354\U679d\U5e7f\U573a\U5e97";
+              "cityName" : "\U5357\U4eac";
+              "distance" : 1345;
+              "id" : 139893;
+              "latitude" : "32.06443";
+              "longitude" : "118.7933";
+              "telephone" : "025-86637788";
+              "trafficRoutes" : "\U4e58\U5750\U516c\U8f66(\U6216\U5730\U94c1)  \U5730\U94c11\U53f7\U7ebf\U30013\U53f7\U7ebf\U53ef\U5230\U8fbe\U30021\U8def\Uff0c16\U8def\Uff0c25\U8def\Uff0c30\U8def\Uff0c33\U8def  \U81f3  \U9f13\U697c\U533b\U9662   \U7ad9\U5230\U8fbe";
+              },
+              {
+              "address" : "\U5357\U4eac\U5e02\U7384\U6b66\U533a\U9f99\U87e0\U8def1\U53f7";
+              "cinemaName" : "\U5e78\U798f\U84dd\U6d77\U56fd\U9645\U5f71\U57ce\Uff08\U5357\U4eac\U5546\U53a6\U5e97\Uff09";
+              "cityName" : "\U5357\U4eac";
+              "distance" : 2303;
+              "id" : 968;
+              "latitude" : "32.09694";
+              "longitude" : "118.7914";
+              "telephone" : "025-85659990";
+              "trafficRoutes" : "\U5730\U94c13\U53f7\U7ebf-\U5c0f\U5e02\U7ad9\Uff081\U30013\U53f7\U51fa\U53e3\Uff09\Uff0c\U5411\U5357\U8d70500\U7c73\Uff1b1\U300110\U300125\U300128\U300130\U300133\U300138\U300154\U300164\U300169";
+              },
+              {
+              "address" : "\U5357\U4eac\U5e02\U7384\U6b66\U533a\U73e0\U6c5f\U8def88\U53f7\U65b0\U4e16\U754c\U767e\U8d275\U697c";
+              "cinemaName" : "\U5357\U4eac\U8fbe\U7f8e\U56fd\U9645\U5f71\U57ce";
+              "cityName" : "\U5357\U4eac";
+              "distance" : 2314;
+              "id" : 137040;
+              "latitude" : "32.05591";
+              "longitude" : "118.7954";
+              "telephone" : "025-58833343";
+              "trafficRoutes" : "\U4e58\U5750\U516c\U8f666\Uff0c65\Uff0c,91 ,  47 , y6\U8def\U81f3\U73e0\U6c5f\U8def\U5e7f\U5dde\U8def\U7ad9\U5230\U8fbe";
+              },
+              {
+              "address" : "\U5357\U4eac\U5e02\U9f13\U697c\U533a\U5efa\U5b81\U8def8\U53f7\U7389\U6865\U5546\U4e1a\U5e7f\U573a\U4e09\U671f9\U697c";
+              "cinemaName" : "\U5357\U4eac\U91d1\U9038\Uff08\U7389\U6865\U5e97\Uff09";
+              "cityName" : "\U5357\U4eac";
+              "distance" : 2352;
+              "id" : 976;
+              "latitude" : "32.09717";
+              "longitude" : "118.7868";
+              "telephone" : "025-58822020";
+              "trafficRoutes" : "10\U8def\U300154\U8def\U3001136\U533a\U95f4\U3001157\U533a\U95f4";
+              },
+              {
+              "address" : "\U7384\U6b66\U533a\U6768\U5c06\U519b\U5df79\U53f7\U66fc\U5ea6\U6587\U5316\U5e7f\U573a3\U697c\Uff081912\U5bf9\U9762\Uff09";
+              "cinemaName" : "\U5357\U4eacUME\U56fd\U9645\U5f71\U57ce\Uff081912\U5e97)";
+              "cityName" : "\U5357\U4eac";
+              "distance" : 2912;
+              "id" : 980;
+              "latitude" : "32.05162";
+              "longitude" : "118.8008";
+              "telephone" : "025-68515050";
+              "trafficRoutes" : "\U53ef\U4e58\U5730\U94c12\U53f7\U7ebf\U81f3\U5927\U884c\U5bab\U7ad9\U4e0b2\U53f7\U51fa\U53e3\Uff3c\U4e58\U516c\U4ea41, 2, 3\Uff0c15, 31, 44, 65\n68, 80, 95, 304, 313\U8def\U5230\U5927\U884c\U5bab\U5317\U7ad9\U4e0b\U621626,30,46\U8def\U5230\U6d2a\U6b66\U5317\U8def\U7ad9\U4e0b\n\n";
+              }
+              ];
+}

@@ -9,9 +9,16 @@
 #import "CinemaViewController.h"
 #import "HallsViewController.h"
 
+#import "CinemaModel.h"
+
+#import "CinemaCell.h"
+
 #import "Defines.h"
 
 @interface CinemaViewController ()
+
+@property (strong, nonatomic)CinemaModel *cinemaItemsModel;
+@property (weak, nonatomic) IBOutlet UITableView *cinemaTableView;
 
 @end
 
@@ -20,7 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-   
+    
+    [self initData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -29,12 +37,19 @@
     
     [self initNavigationBar];
     [self initTabBar];
+    
+    [self getCinemaItemsData];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)initData
+{
+    self.cinemaItemsModel = [CinemaModel getSingletonObj];
 }
 
 - (void)initNavigationBar
@@ -60,7 +75,17 @@
     if ([segue.identifier isEqualToString:@"pushToHallsSegue"]) {
         HallsViewController *hallsVC = segue.destinationViewController;
     }
+}
 
+#pragma mark - getCinemaItemsData : 获取周围影院信息
+- (void)getCinemaItemsData
+{
+    // Load some data to populate the table view with
+    NSURL *cinemaItemsJSONURL = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"json"];
+    NSData *cinemaItemsJSONData = [NSData dataWithContentsOfURL:cinemaItemsJSONURL];
+    id cinemaItemsData = [NSJSONSerialization JSONObjectWithData:cinemaItemsJSONData options:0 error:NULL];
+    
+    [self.cinemaItemsModel initWithCinemaItemsData:cinemaItemsData];
 }
 
 
@@ -83,7 +108,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 5;
+    return self.cinemaItemsModel.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -91,9 +116,12 @@
     long row = indexPath.row;
     long section = indexPath.section;
     
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"tmpCell" forIndexPath:indexPath];
     
-    return cell;
+    static NSString *cellIdentifier = @"CinemaCell";
+    CinemaCell *cinemaCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+
+    [cinemaCell setAppearanceWithModel:self.cinemaItemsModel.cinemaItemsArr[row]];    
+    return cinemaCell;
 }
 
 #pragma mark - UITableViewDelegate

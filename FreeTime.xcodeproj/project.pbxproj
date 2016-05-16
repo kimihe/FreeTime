@@ -10,8 +10,12 @@
 		BB154ECF1CDBA0D10090CF48 /* HallsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ECE1CDBA0D10090CF48 /* HallsViewController.m */; };
 		BB154ED21CDBA3EE0090CF48 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ED11CDBA3EE0090CF48 /* ChatRoomViewController.m */; };
 		BB154ED51CDBA41C0090CF48 /* FocusPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */; };
+		BB4AEDCF1CC2520900FC3F8A /* CinemaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4AEDCE1CC2520900FC3F8A /* CinemaModel.m */; };
+		BB4AEDD41CC2558000FC3F8A /* CinemaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB4AEDD31CC2558000FC3F8A /* CinemaCell.m */; };
+		BB4AEDD61CC2638E00FC3F8A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = BB4AEDD51CC2638E00FC3F8A /* test.json */; };
 		BB6A07DC1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6A07DB1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m */; };
 		BB6D23CF1CE969CF00FC5BC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = BB6D23CE1CE969CF00FC5BC4 /* README.md */; };
+		BB6D23D11CE9AD2900FC5BC4 /* CinemaItems.json in Resources */ = {isa = PBXBuildFile; fileRef = BB6D23D01CE9AD2900FC5BC4 /* CinemaItems.json */; };
 		BB87366C1CDB763200621EB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87366B1CDB763200621EB4 /* main.m */; };
 		BB87366F1CDB763200621EB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB87366E1CDB763200621EB4 /* AppDelegate.m */; };
 		BB8736781CDB763200621EB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB8736761CDB763200621EB4 /* Main.storyboard */; };
@@ -75,9 +79,15 @@
 		BB154ED11CDBA3EE0090CF48 /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
 		BB154ED31CDBA41C0090CF48 /* FocusPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FocusPointViewController.h; sourceTree = "<group>"; };
 		BB154ED41CDBA41C0090CF48 /* FocusPointViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FocusPointViewController.m; sourceTree = "<group>"; };
+		BB4AEDCD1CC2520900FC3F8A /* CinemaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinemaModel.h; sourceTree = "<group>"; };
+		BB4AEDCE1CC2520900FC3F8A /* CinemaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaModel.m; sourceTree = "<group>"; };
+		BB4AEDD21CC2558000FC3F8A /* CinemaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CinemaCell.h; sourceTree = "<group>"; };
+		BB4AEDD31CC2558000FC3F8A /* CinemaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CinemaCell.m; sourceTree = "<group>"; };
+		BB4AEDD51CC2638E00FC3F8A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 		BB6A07DA1CE42FD9001662E3 /* Kimi_CinemaNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kimi_CinemaNavigationController.h; sourceTree = "<group>"; };
 		BB6A07DB1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kimi_CinemaNavigationController.m; sourceTree = "<group>"; };
 		BB6D23CE1CE969CF00FC5BC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		BB6D23D01CE9AD2900FC5BC4 /* CinemaItems.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CinemaItems.json; sourceTree = "<group>"; };
 		BB8736671CDB763200621EB4 /* FreeTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB87366B1CDB763200621EB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BB87366D1CDB763200621EB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -199,6 +209,32 @@
 			name = Mine;
 			sourceTree = "<group>";
 		};
+		BB4AEDCC1CC251C700FC3F8A /* Cinema */ = {
+			isa = PBXGroup;
+			children = (
+				BB4AEDCD1CC2520900FC3F8A /* CinemaModel.h */,
+				BB4AEDCE1CC2520900FC3F8A /* CinemaModel.m */,
+			);
+			name = Cinema;
+			sourceTree = "<group>";
+		};
+		BB4AEDD01CC2552A00FC3F8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB4AEDD11CC2554F00FC3F8A /* Cinema */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BB4AEDD11CC2554F00FC3F8A /* Cinema */ = {
+			isa = PBXGroup;
+			children = (
+				BB4AEDD21CC2558000FC3F8A /* CinemaCell.h */,
+				BB4AEDD31CC2558000FC3F8A /* CinemaCell.m */,
+			);
+			name = Cinema;
+			sourceTree = "<group>";
+		};
 		BB87365E1CDB763200621EB4 = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +261,7 @@
 			children = (
 				BB8736A11CDB76B100621EB4 /* ViewController */,
 				BB8736A01CDB769400621EB4 /* Model */,
+				BB4AEDD01CC2552A00FC3F8A /* View */,
 				BB97C53D1CE4AFD800D59245 /* Publics */,
 				BB8736B11CDB7A0C00621EB4 /* Resources */,
 				BB87366D1CDB763200621EB4 /* AppDelegate.h */,
@@ -267,6 +304,7 @@
 		BB8736A01CDB769400621EB4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB4AEDCC1CC251C700FC3F8A /* Cinema */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -288,6 +326,8 @@
 			isa = PBXGroup;
 			children = (
 				BB9A373D1CE6E12E00D3FBD4 /* icon2 */,
+				BB6D23D01CE9AD2900FC5BC4 /* CinemaItems.json */,
+				BB4AEDD51CC2638E00FC3F8A /* test.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -453,6 +493,7 @@
 				BB9A37621CE6E12E00D3FBD4 /* bottomtab4.png in Resources */,
 				BB9A376D1CE6E12E00D3FBD4 /* peetime@2x.png in Resources */,
 				BB9A375F1CE6E12E00D3FBD4 /* bottomtab2_1@2x.png in Resources */,
+				BB4AEDD61CC2638E00FC3F8A /* test.json in Resources */,
 				BB9A375D1CE6E12E00D3FBD4 /* bottomtab2@2x.png in Resources */,
 				BB9A375C1CE6E12E00D3FBD4 /* bottomtab2.png in Resources */,
 				BB8736781CDB763200621EB4 /* Main.storyboard in Resources */,
@@ -460,6 +501,7 @@
 				BB9A37691CE6E12E00D3FBD4 /* bottomtab5_1@2x.png in Resources */,
 				BB9A375A1CE6E12E00D3FBD4 /* bottomtab1_1.png in Resources */,
 				BB9A376F1CE6E12E00D3FBD4 /* 返回.png in Resources */,
+				BB6D23D11CE9AD2900FC5BC4 /* CinemaItems.json in Resources */,
 				BB9A37661CE6E12E00D3FBD4 /* bottomtab5.png in Resources */,
 				BB9A37631CE6E12E00D3FBD4 /* bottomtab4@2x.png in Resources */,
 				BB9A376A1CE6E12E00D3FBD4 /* iconfont-jiantou-revolve.png in Resources */,
@@ -489,8 +531,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB8736A71CDB776200621EB4 /* CinemaViewController.m in Sources */,
+				BB4AEDCF1CC2520900FC3F8A /* CinemaModel.m in Sources */,
 				BB154ED21CDBA3EE0090CF48 /* ChatRoomViewController.m in Sources */,
 				BB87366F1CDB763200621EB4 /* AppDelegate.m in Sources */,
+				BB4AEDD41CC2558000FC3F8A /* CinemaCell.m in Sources */,
 				BB154ECF1CDBA0D10090CF48 /* HallsViewController.m in Sources */,
 				BB6A07DC1CE42FD9001662E3 /* Kimi_CinemaNavigationController.m in Sources */,
 				BB8736B01CDB782000621EB4 /* MineViewController.m in Sources */,

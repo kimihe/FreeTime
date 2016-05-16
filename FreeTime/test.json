@@ -1,0 +1,50 @@
+{
+    "reason": "success",
+    "result": [
+               {
+               "id": "1190",
+               "cityName": "苏州",
+               "cinemaName": "苏州幸福蓝海IMAX影城",
+               "address": "苏州市广济南路219号新苏天地9楼",
+               "telephone": "0512-65899658",
+               "latitude": "31.30947",
+               "longitude": "120.6003",
+               "trafficRoutes": "",
+               "distance": 0
+               },
+               {
+               "id": "1196",
+               "cityName": "苏州",
+               "cinemaName": "金逸苏州石路永捷店",
+               "address": "苏州市姑苏区广济南路19号西城永捷生活广场6楼",
+               "telephone": "0512-65703050",
+               "latitude": "31.30411",
+               "longitude": "120.6012",
+               "trafficRoutes": "游1、7路、88路、204路、34路、",
+               "distance": 603
+               },
+               {
+               "id": "1201",
+               "cityName": "苏州",
+               "cinemaName": "苏州橙天嘉禾影城（来客茂店）",
+               "address": "苏州金阊区桐泾北路218号来客茂时尚生活广场4F",
+               "telephone": "0512-86860919",
+               "latitude": "31.31268",
+               "longitude": "120.5894",
+               "trafficRoutes": "311路、400路上行、游5路、317路、949路、441路、34路，到西园东站下车",
+               "distance": 1097
+               },
+               {
+               "id": "1210",
+               "cityName": "苏州",
+               "cinemaName": "苏州星美影城（李公堤店）即将开业",
+               "address": "苏州市工业园区李公堤四期一幢",
+               "telephone": "",
+               "latitude": "31.29889",
+               "longitude": "120.5853",
+               "trafficRoutes": "178、207、100、168路公交到达",
+               "distance": 1850
+               }
+               ],
+    "error_code": 0
+}
