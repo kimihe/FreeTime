@@ -14,6 +14,8 @@
 #import "CinemaCell.h"
 
 #import "Defines.h"
+#import "KimiNetwork.h"
+#import "iToast.h"
 
 @interface CinemaViewController ()
 
@@ -29,6 +31,7 @@
     // Do any additional setup after loading the view.
     
     [self initData];
+    [self getCinemaItemsData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -37,8 +40,6 @@
     
     [self initNavigationBar];
     [self initTabBar];
-    
-    [self getCinemaItemsData];
 }
 
 
@@ -84,8 +85,30 @@
     NSURL *cinemaItemsJSONURL = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"json"];
     NSData *cinemaItemsJSONData = [NSData dataWithContentsOfURL:cinemaItemsJSONURL];
     id cinemaItemsData = [NSJSONSerialization JSONObjectWithData:cinemaItemsJSONData options:0 error:NULL];
-    
     [self.cinemaItemsM initWithCinemaItemsData:cinemaItemsData];
+    NSString *toast = [NSString stringWithFormat:@"搜索到%d条信息", self.cinemaItemsM.count];
+    [[[iToast makeText:NSLocalizedString(toast, @"")]
+      setGravity:iToastGravityCenter] show];
+    [self.cinemaTableView reloadData];
+    return;
+    
+    
+    
+    
+    NSString *url = @"http://v.juhe.cn/movie/cinemas.local";
+    NSDictionary *userInfo = @{@"lat" : @"32.076269", @"lon" : @"118.790456", @"radius" : @"3000", @"key" : @"e7423c2342a156b8288cd37d5c53683a", @"dtype" : @"json"};
+    
+    KimiNetwork *httpRequest = [KimiNetwork httpRequest];
+    [httpRequest postDataWithURL:url params:userInfo success:^(id object) {
+        NSLog(@"JSON: %@", object);
+        [self.cinemaItemsM initWithCinemaItemsData:object];
+        NSString *toast = [NSString stringWithFormat:@"搜索到%d条信息", self.cinemaItemsM.count];
+        [[[iToast makeText:NSLocalizedString(toast, @"")]
+          setGravity:iToastGravityCenter] show];
+        [self.cinemaTableView reloadData];
+    } failure:^(id object) {
+        NSLog(@"Error: %@", object);
+    }];
 }
 
 
