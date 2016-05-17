@@ -53,3 +53,14 @@
 
 @end
 
+
+@interface CinemaLocationModel : NSObject
+
+@property (strong, nonatomic)NSString *latitude;//纬度
+@property (strong, nonatomic)NSString *longitude;//经度
+
++(CinemaLocationModel *)getSingletonObj;
+- (void)initWithCinemaLocationData:(id)data;
+
+@end
+

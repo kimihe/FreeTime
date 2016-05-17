@@ -11,9 +11,9 @@
 
 @interface CinemaCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *cinemaName;
-@property (weak, nonatomic) IBOutlet UILabel *address;
-@property (weak, nonatomic) IBOutlet UILabel *distance;
+@property (weak, nonatomic) IBOutlet UILabel *cinemaNameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *addressLabel;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 
 - (void)setAppearanceWithCinemaCellsModel:(CinemaCellsModel *)cinemaCellsM;
 

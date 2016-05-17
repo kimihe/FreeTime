@@ -20,6 +20,8 @@
 @interface CinemaViewController ()
 
 @property (strong, nonatomic)CinemaItemsModel *cinemaItemsM;
+@property (strong, nonatomic)CinemaLocationModel *cinemaLocationM;
+
 @property (weak, nonatomic) IBOutlet UITableView *cinemaTableView;
 
 @end
@@ -31,7 +33,6 @@
     // Do any additional setup after loading the view.
     
     [self initData];
-    [self getCinemaItemsData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -40,6 +41,8 @@
     
     [self initNavigationBar];
     [self initTabBar];
+    
+    [self getCinemaItemsData];
 }
 
 
@@ -51,6 +54,7 @@
 - (void)initData
 {
     self.cinemaItemsM = [CinemaItemsModel getSingletonObj];
+    self.cinemaLocationM = [CinemaLocationModel getSingletonObj];
 }
 
 - (void)initNavigationBar
@@ -82,21 +86,23 @@
 - (void)getCinemaItemsData
 {
     // Load some data to populate the table view with
-    NSURL *cinemaItemsJSONURL = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"json"];
-    NSData *cinemaItemsJSONData = [NSData dataWithContentsOfURL:cinemaItemsJSONURL];
-    id cinemaItemsData = [NSJSONSerialization JSONObjectWithData:cinemaItemsJSONData options:0 error:NULL];
-    [self.cinemaItemsM initWithCinemaItemsData:cinemaItemsData];
-    NSString *toast = [NSString stringWithFormat:@"搜索到%d条信息", self.cinemaItemsM.count];
-    [[[iToast makeText:NSLocalizedString(toast, @"")]
-      setGravity:iToastGravityCenter] show];
-    [self.cinemaTableView reloadData];
-    return;
+//    NSURL *cinemaItemsJSONURL = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"json"];
+//    NSData *cinemaItemsJSONData = [NSData dataWithContentsOfURL:cinemaItemsJSONURL];
+//    id cinemaItemsData = [NSJSONSerialization JSONObjectWithData:cinemaItemsJSONData options:0 error:NULL];
+//    [self.cinemaItemsM initWithCinemaItemsData:cinemaItemsData];
+//    NSString *toast = [NSString stringWithFormat:@"搜索到%d条信息", self.cinemaItemsM.count];
+//    [[[iToast makeText:NSLocalizedString(toast, @"")]
+//      setGravity:iToastGravityCenter] show];
+//    [self.cinemaTableView reloadData];
+//    return;
     
     
     
     
     NSString *url = @"http://v.juhe.cn/movie/cinemas.local";
-    NSDictionary *userInfo = @{@"lat" : @"32.076269", @"lon" : @"118.790456", @"radius" : @"3000", @"key" : @"e7423c2342a156b8288cd37d5c53683a", @"dtype" : @"json"};
+    NSString *latitude = self.cinemaLocationM.latitude;
+    NSString *longitude = self.cinemaLocationM.longitude;
+    NSDictionary *userInfo = @{@"lat" : latitude, @"lon" : longitude, @"radius" : @"3000", @"key" : @"e7423c2342a156b8288cd37d5c53683a", @"dtype" : @"json"};
     
     KimiNetwork *httpRequest = [KimiNetwork httpRequest];
     [httpRequest postDataWithURL:url params:userInfo success:^(id object) {

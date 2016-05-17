@@ -98,6 +98,12 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="什么都不写定位到南京玄武门地铁站" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-7x-G2s">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -119,10 +125,14 @@
                             <constraint firstItem="Zap-p2-OWn" firstAttribute="top" secondItem="fiZ-fb-la1" secondAttribute="bottom" constant="15" id="cpq-DA-zPi">
                                 <variation key="heightClass=regular-widthClass=compact" constant="30"/>
                             </constraint>
+                            <constraint firstItem="AbS-7x-G2s" firstAttribute="centerX" secondItem="pxx-bX-vNI" secondAttribute="centerX" id="fUY-FS-PRt"/>
                             <constraint firstItem="W4d-qj-nRR" firstAttribute="top" secondItem="fiZ-fb-la1" secondAttribute="bottom" constant="68" id="gWk-7h-A4R">
                                 <variation key="heightClass=regular-widthClass=compact" constant="80"/>
                             </constraint>
                             <constraint firstItem="W4d-qj-nRR" firstAttribute="leading" secondItem="sQJ-uC-6sa" secondAttribute="trailing" constant="10" id="q7Y-Pq-BPd"/>
+                            <constraint firstItem="AbS-7x-G2s" firstAttribute="top" secondItem="fiZ-fb-la1" secondAttribute="bottom" constant="135" id="ts4-MY-gkl">
+                                <variation key="heightClass=regular-widthClass=compact" constant="150"/>
+                            </constraint>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -130,6 +140,7 @@
                                 <exclude reference="sQJ-uC-6sa"/>
                                 <exclude reference="Zap-p2-OWn"/>
                                 <exclude reference="W4d-qj-nRR"/>
+                                <exclude reference="AbS-7x-G2s"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0qt-P6-Edu"/>
@@ -140,6 +151,8 @@
                                 <exclude reference="cpq-DA-zPi"/>
                                 <exclude reference="gWk-7h-A4R"/>
                                 <exclude reference="q7Y-Pq-BPd"/>
+                                <exclude reference="fUY-FS-PRt"/>
+                                <exclude reference="ts4-MY-gkl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -148,6 +161,7 @@
                                 <include reference="sQJ-uC-6sa"/>
                                 <include reference="Zap-p2-OWn"/>
                                 <include reference="W4d-qj-nRR"/>
+                                <include reference="AbS-7x-G2s"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0qt-P6-Edu"/>
@@ -158,6 +172,8 @@
                                 <include reference="cpq-DA-zPi"/>
                                 <include reference="gWk-7h-A4R"/>
                                 <include reference="q7Y-Pq-BPd"/>
+                                <include reference="fUY-FS-PRt"/>
+                                <include reference="ts4-MY-gkl"/>
                             </mask>
                         </variation>
                     </view>
@@ -168,6 +184,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="latitudeTextField" destination="Zap-p2-OWn" id="8df-lg-GVz"/>
+                        <outlet property="longitudeTextField" destination="W4d-qj-nRR" id="6pF-jL-gj2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avF-xc-ETa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -349,9 +369,9 @@
                                             </variation>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="address" destination="Cp9-vn-gLj" id="prX-KK-p98"/>
-                                            <outlet property="cinemaName" destination="GlG-Vp-EVs" id="ZaW-Fi-Drs"/>
-                                            <outlet property="distance" destination="kGo-i2-8G2" id="9xF-mz-tys"/>
+                                            <outlet property="addressLabel" destination="Cp9-vn-gLj" id="CyD-SY-U0I"/>
+                                            <outlet property="cinemaNameLabel" destination="GlG-Vp-EVs" id="cuC-SL-Yro"/>
+                                            <outlet property="distanceLabel" destination="kGo-i2-8G2" id="0Bx-in-diP"/>
                                             <segue destination="YPD-ru-oQJ" kind="show" identifier="pushToHallsSegue" id="fVq-Gy-VIH"/>
                                         </connections>
                                     </tableViewCell>

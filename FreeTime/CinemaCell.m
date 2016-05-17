@@ -23,13 +23,13 @@
 
 - (void)setAppearanceWithCinemaCellsModel:(CinemaCellsModel *)cinemaCellsM
 {
-    self.cinemaName.adjustsFontSizeToFitWidth = YES;
-    self.address.adjustsFontSizeToFitWidth = YES;
-    self.distance.adjustsFontSizeToFitWidth = YES;
+    self.cinemaNameLabel.adjustsFontSizeToFitWidth = YES;
+    self.addressLabel.adjustsFontSizeToFitWidth = YES;
+    self.distanceLabel.adjustsFontSizeToFitWidth = YES;
     
-    self.cinemaName.text = cinemaCellsM.cinemaName;
-    self.address.text = cinemaCellsM.address;
-    self.distance.text = [cinemaCellsM.distance stringByAppendingString:@"m"];
+    self.cinemaNameLabel.text = cinemaCellsM.cinemaName;
+    self.addressLabel.text = cinemaCellsM.address;
+    self.distanceLabel.text = [cinemaCellsM.distance stringByAppendingString:@"m"];
 }
 
 @end

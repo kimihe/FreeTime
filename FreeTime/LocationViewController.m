@@ -8,7 +8,14 @@
 
 #import "LocationViewController.h"
 
+#import "CinemaModel.h"
+
 @interface LocationViewController ()
+
+@property (strong, nonatomic)CinemaLocationModel *cinemaLocationM;
+
+@property (weak, nonatomic) IBOutlet UITextField *latitudeTextField;//纬度
+@property (weak, nonatomic) IBOutlet UITextField *longitudeTextField;//经度
 
 @end
 
@@ -17,12 +24,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self initData];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    NSString *latitude = self.latitudeTextField.text;
+    if ([latitude isEqualToString:@""])
+        latitude = @"32.076269";
+    
+    NSString *longitude = self.longitudeTextField.text;
+    if ([longitude isEqualToString:@""])
+        longitude = @"118.790456";
+    
+    self.cinemaLocationM.latitude = latitude;
+    self.cinemaLocationM.longitude = longitude;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)initData
+{
+    self.cinemaLocationM = [CinemaLocationModel getSingletonObj];
+}
+
+
+
 
 /*
 #pragma mark - Navigation

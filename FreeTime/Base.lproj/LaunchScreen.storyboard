@@ -45,11 +45,11 @@
                                 <exclude reference="BsB-YB-9hB"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="a1G-FO-Xth"/>
-                                <exclude reference="uXu-ZR-wcX"/>
+                                <exclude reference="l3d-eG-mne"/>
                                 <exclude reference="88L-sw-Kqp"/>
                                 <exclude reference="uWP-Pz-WGp"/>
-                                <exclude reference="l3d-eG-mne"/>
+                                <exclude reference="a1G-FO-Xth"/>
+                                <exclude reference="uXu-ZR-wcX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -58,11 +58,11 @@
                                 <include reference="BsB-YB-9hB"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="a1G-FO-Xth"/>
-                                <include reference="uXu-ZR-wcX"/>
+                                <include reference="l3d-eG-mne"/>
                                 <include reference="88L-sw-Kqp"/>
                                 <include reference="uWP-Pz-WGp"/>
-                                <include reference="l3d-eG-mne"/>
+                                <include reference="a1G-FO-Xth"/>
+                                <include reference="uXu-ZR-wcX"/>
                             </mask>
                         </variation>
                     </view>
