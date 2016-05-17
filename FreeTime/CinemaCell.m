@@ -7,7 +7,6 @@
 //
 
 #import "CinemaCell.h"
-#import "CinemaModel.h"
 
 @implementation CinemaCell
 
@@ -22,15 +21,15 @@
     // Configure the view for the selected state
 }
 
-- (void)setAppearanceWithModel:(NSDictionary *)dic
+- (void)setAppearanceWithCinemaCellsModel:(CinemaCellsModel *)cinemaCellsM
 {
     self.cinemaName.adjustsFontSizeToFitWidth = YES;
     self.address.adjustsFontSizeToFitWidth = YES;
     self.distance.adjustsFontSizeToFitWidth = YES;
     
-    self.cinemaName.text = dic[@"cinemaName"];
-    self.address.text = dic[@"address"];
-    self.distance.text = [NSString stringWithFormat:@"%@m", dic[@"distance"]];
+    self.cinemaName.text = cinemaCellsM.cinemaName;
+    self.address.text = cinemaCellsM.address;
+    self.distance.text = [cinemaCellsM.distance stringByAppendingString:@"m"];
 }
 
 @end

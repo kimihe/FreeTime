@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CinemaModel.h"
 
 @interface CinemaCell : UITableViewCell
 
@@ -14,6 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *address;
 @property (weak, nonatomic) IBOutlet UILabel *distance;
 
-- (void)setAppearanceWithModel:(NSDictionary *)dic;
+- (void)setAppearanceWithCinemaCellsModel:(CinemaCellsModel *)cinemaCellsM;
 
 @end

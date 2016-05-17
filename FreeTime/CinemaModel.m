@@ -8,10 +8,10 @@
 
 #import "CinemaModel.h"
 
-@implementation CinemaModel
+@implementation CinemaItemsModel
 
-static CinemaModel *singletonObj = nil;
-+(CinemaModel *)getSingletonObj
+static CinemaItemsModel *singletonObj = nil;
++(CinemaItemsModel *)getSingletonObj
 {
     @synchronized (self) {
         if (singletonObj == nil)
@@ -29,22 +29,36 @@ static CinemaModel *singletonObj = nil;
     {
         NSDictionary *dic = (NSDictionary *)data;
         
-        self.error_code = dic[@"error_code"];
+        self.error_code = [NSString stringWithFormat:@"%@", dic[@"error_code"]];
         self.reason = dic[@"reason"];
-        
         self.cinemaItemsArr = dic[@"result"];
         self.count = [self.cinemaItemsArr count];
         
-//        self.id = [dic objectForKey:@"id"];
-//        self.cityName = dic[@"cityName"];
-//        self.cinemaName = dic[@"cinemaName"];
-//        self.address = dic[@"address"];
-//        self.telephone = dic[@"telephone"];
-//        self.latitude = dic[@"latitude"];
-//        self.longitude = dic[@"longitude"];
-//        self.trafficRoutes = dic[@"trafficRoutes"];
-//        self.distance = dic[@"distance"];
     }
 }
 
 @end
+
+@implementation CinemaCellsModel
+
+- (void)initWithCinemaCellsData:(id)data
+{
+    if ([data isKindOfClass:[NSDictionary class]])
+    {
+        NSDictionary *dic = (NSDictionary *)data;
+        
+        self.id = [dic objectForKey:@"id"];
+        self.cityName = dic[@"cityName"];
+        self.cinemaName = dic[@"cinemaName"];
+        self.address = dic[@"address"];
+        self.telephone = dic[@"telephone"];
+        self.latitude = dic[@"latitude"];
+        self.longitude = dic[@"longitude"];
+        self.trafficRoutes = dic[@"trafficRoutes"];
+        self.distance = [NSString stringWithFormat:@"%@", dic[@"distance"]];
+    }
+}
+
+@end
+
+

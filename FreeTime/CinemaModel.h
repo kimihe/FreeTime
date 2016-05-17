@@ -24,25 +24,32 @@
 
 #import <Foundation/Foundation.h>
 
-@interface CinemaModel : NSObject
+@interface CinemaItemsModel : NSObject
+
 @property (strong, nonatomic)NSString *error_code;
 @property (strong, nonatomic)NSString *reason;
-
 @property (strong, nonatomic)NSArray *cinemaItemsArr;
 @property (assign, nonatomic)NSInteger count;
 
-//@property (strong, nonatomic)NSArray *id;
-//@property (strong, nonatomic)NSArray *cityName;
-//@property (strong, nonatomic)NSArray *cinemaName;
-//@property (strong, nonatomic)NSArray *address;
-//@property (strong, nonatomic)NSArray *telephone;
-//@property (strong, nonatomic)NSArray *latitude;
-//@property (strong, nonatomic)NSArray *longitude;
-//@property (strong, nonatomic)NSArray *trafficRoutes;
-//@property (strong, nonatomic)NSArray *distance;
-
-+(CinemaModel *)getSingletonObj;
++(CinemaItemsModel *)getSingletonObj;
 - (void)initWithCinemaItemsData:(id)data;
+
+@end
+
+
+@interface CinemaCellsModel : NSObject
+
+@property (strong, nonatomic)NSString *id;
+@property (strong, nonatomic)NSString *cityName;
+@property (strong, nonatomic)NSString *cinemaName;
+@property (strong, nonatomic)NSString *address;
+@property (strong, nonatomic)NSString *telephone;
+@property (strong, nonatomic)NSString *latitude;
+@property (strong, nonatomic)NSString *longitude;
+@property (strong, nonatomic)NSString *trafficRoutes;
+@property (strong, nonatomic)NSString *distance;
+
+- (void)initWithCinemaCellsData:(id)data;
 
 @end
 

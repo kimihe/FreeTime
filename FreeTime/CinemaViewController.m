@@ -17,7 +17,7 @@
 
 @interface CinemaViewController ()
 
-@property (strong, nonatomic)CinemaModel *cinemaItemsModel;
+@property (strong, nonatomic)CinemaItemsModel *cinemaItemsM;
 @property (weak, nonatomic) IBOutlet UITableView *cinemaTableView;
 
 @end
@@ -49,7 +49,7 @@
 
 - (void)initData
 {
-    self.cinemaItemsModel = [CinemaModel getSingletonObj];
+    self.cinemaItemsM = [CinemaItemsModel getSingletonObj];
 }
 
 - (void)initNavigationBar
@@ -65,17 +65,17 @@
 }
 
 
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
-    if ([segue.identifier isEqualToString:@"pushToHallsSegue"]) {
-        HallsViewController *hallsVC = segue.destinationViewController;
-    }
-}
+//#pragma mark - Navigation
+//
+//// In a storyboard-based application, you will often want to do a little preparation before navigation
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    // Get the new view controller using [segue destinationViewController].
+//    // Pass the selected object to the new view controller.
+//    
+//    if ([segue.identifier isEqualToString:@"pushToHallsSegue"]) {
+//        HallsViewController *hallsVC = segue.destinationViewController;
+//    }
+//}
 
 #pragma mark - getCinemaItemsData : 获取周围影院信息
 - (void)getCinemaItemsData
@@ -85,7 +85,7 @@
     NSData *cinemaItemsJSONData = [NSData dataWithContentsOfURL:cinemaItemsJSONURL];
     id cinemaItemsData = [NSJSONSerialization JSONObjectWithData:cinemaItemsJSONData options:0 error:NULL];
     
-    [self.cinemaItemsModel initWithCinemaItemsData:cinemaItemsData];
+    [self.cinemaItemsM initWithCinemaItemsData:cinemaItemsData];
 }
 
 
@@ -108,7 +108,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.cinemaItemsModel.count;
+    return self.cinemaItemsM.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -120,7 +120,11 @@
     static NSString *cellIdentifier = @"CinemaCell";
     CinemaCell *cinemaCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
 
-    [cinemaCell setAppearanceWithModel:self.cinemaItemsModel.cinemaItemsArr[row]];    
+    CinemaCellsModel *cinemaCellsM = [CinemaCellsModel new];
+    [cinemaCellsM initWithCinemaCellsData:self.cinemaItemsM.cinemaItemsArr[row]];
+    
+    [cinemaCell setAppearanceWithCinemaCellsModel:cinemaCellsM];
+    
     return cinemaCell;
 }
 
