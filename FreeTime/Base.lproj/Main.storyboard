@@ -7,6 +7,172 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="wKt-ao-kRA">
+            <objects>
+                <viewController id="A9a-Ki-Jtn" customClass="LocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fiZ-fb-la1"/>
+                        <viewControllerLayoutGuide type="bottom" id="pZZ-cA-TIi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pxx-bX-vNI">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="latitude(纬度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFa-5h-FcW">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="sjP-BR-Paz">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="sjP-BR-Paz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="sjP-BR-Paz"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="longitude(经度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQJ-uC-6sa">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="zN6-dQ-KbM">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="zN6-dQ-KbM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="zN6-dQ-KbM"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="latitude(纬度)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zap-p2-OWn">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="108" id="8ze-iW-oLj">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="120"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8ze-iW-oLj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8ze-iW-oLj"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="longitude(经度)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W4d-qj-nRR">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="OBa-4b-FiV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OBa-4b-FiV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="OBa-4b-FiV"/>
+                                    </mask>
+                                </variation>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TFa-5h-FcW" firstAttribute="top" secondItem="fiZ-fb-la1" secondAttribute="bottom" constant="24" id="0qt-P6-Edu">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="Zap-p2-OWn" firstAttribute="leading" secondItem="TFa-5h-FcW" secondAttribute="trailing" constant="10" id="1rG-6Z-iw5">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="sQJ-uC-6sa" firstAttribute="top" secondItem="fiZ-fb-la1" secondAttribute="bottom" constant="77" id="BD1-7F-ar7">
+                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="sQJ-uC-6sa" firstAttribute="leading" secondItem="pxx-bX-vNI" secondAttribute="leadingMargin" constant="41" id="BeM-mY-nlm">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="TFa-5h-FcW" firstAttribute="leading" secondItem="pxx-bX-vNI" secondAttribute="leadingMargin" constant="41" id="KGi-bY-EUD">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="Zap-p2-OWn" firstAttribute="top" secondItem="fiZ-fb-la1" secondAttribute="bottom" constant="15" id="cpq-DA-zPi">
+                                <variation key="heightClass=regular-widthClass=compact" constant="30"/>
+                            </constraint>
+                            <constraint firstItem="W4d-qj-nRR" firstAttribute="top" secondItem="fiZ-fb-la1" secondAttribute="bottom" constant="68" id="gWk-7h-A4R">
+                                <variation key="heightClass=regular-widthClass=compact" constant="80"/>
+                            </constraint>
+                            <constraint firstItem="W4d-qj-nRR" firstAttribute="leading" secondItem="sQJ-uC-6sa" secondAttribute="trailing" constant="10" id="q7Y-Pq-BPd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="TFa-5h-FcW"/>
+                                <exclude reference="sQJ-uC-6sa"/>
+                                <exclude reference="Zap-p2-OWn"/>
+                                <exclude reference="W4d-qj-nRR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0qt-P6-Edu"/>
+                                <exclude reference="KGi-bY-EUD"/>
+                                <exclude reference="BD1-7F-ar7"/>
+                                <exclude reference="BeM-mY-nlm"/>
+                                <exclude reference="1rG-6Z-iw5"/>
+                                <exclude reference="cpq-DA-zPi"/>
+                                <exclude reference="gWk-7h-A4R"/>
+                                <exclude reference="q7Y-Pq-BPd"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="TFa-5h-FcW"/>
+                                <include reference="sQJ-uC-6sa"/>
+                                <include reference="Zap-p2-OWn"/>
+                                <include reference="W4d-qj-nRR"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0qt-P6-Edu"/>
+                                <include reference="KGi-bY-EUD"/>
+                                <include reference="BD1-7F-ar7"/>
+                                <include reference="BeM-mY-nlm"/>
+                                <include reference="1rG-6Z-iw5"/>
+                                <include reference="cpq-DA-zPi"/>
+                                <include reference="gWk-7h-A4R"/>
+                                <include reference="q7Y-Pq-BPd"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vnz-FT-Nu4">
+                        <barButtonItem key="leftBarButtonItem" title="返回" id="oEJ-Ec-s8O">
+                            <connections>
+                                <action selector="leftBarButtonItemAction:" destination="A9a-Ki-Jtn" id="NFm-DP-kPX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="avF-xc-ETa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2368.5" y="-1843.5"/>
+        </scene>
         <!--影院-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
@@ -237,7 +403,13 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="影院" id="oIC-m4-0rP"/>
+                    <navigationItem key="navigationItem" title="影院" id="oIC-m4-0rP">
+                        <barButtonItem key="leftBarButtonItem" title="位置" id="U2s-fA-xNO">
+                            <connections>
+                                <segue destination="UuC-zx-jqE" kind="presentation" id="zsa-be-G7d"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cinemaTableView" destination="bO0-VH-wD4" id="6Qu-v1-eWL"/>
                     </connections>
@@ -525,7 +697,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V6w-1d-kUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450.5" y="109.5"/>
+            <point key="canvasLocation" x="1450.5" y="113.25"/>
         </scene>
         <!--Mine View Controller-->
         <scene sceneID="Bbs-6D-sJp">
@@ -544,7 +716,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bJx-aE-pd3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339.5" y="770.25"/>
+            <point key="canvasLocation" x="1450.5" y="774.75"/>
         </scene>
         <!--Movie View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -682,6 +854,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nxd-gG-upM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="666" y="774.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VRX-Dx-0DV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UuC-zx-jqE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BWB-hg-aSN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="A9a-Ki-Jtn" kind="relationship" relationship="rootViewController" id="0eQ-Jg-oX5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YKB-3z-QaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1450.5" y="-1843.5"/>
         </scene>
     </scenes>
     <resources>
