@@ -16,6 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pZZ-cA-TIi"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pxx-bX-vNI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="latitude(纬度)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFa-5h-FcW">
@@ -143,16 +144,16 @@
                                 <exclude reference="AbS-7x-G2s"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="gWk-7h-A4R"/>
+                                <exclude reference="q7Y-Pq-BPd"/>
+                                <exclude reference="1rG-6Z-iw5"/>
+                                <exclude reference="cpq-DA-zPi"/>
+                                <exclude reference="fUY-FS-PRt"/>
+                                <exclude reference="ts4-MY-gkl"/>
                                 <exclude reference="0qt-P6-Edu"/>
                                 <exclude reference="KGi-bY-EUD"/>
                                 <exclude reference="BD1-7F-ar7"/>
                                 <exclude reference="BeM-mY-nlm"/>
-                                <exclude reference="1rG-6Z-iw5"/>
-                                <exclude reference="cpq-DA-zPi"/>
-                                <exclude reference="gWk-7h-A4R"/>
-                                <exclude reference="q7Y-Pq-BPd"/>
-                                <exclude reference="fUY-FS-PRt"/>
-                                <exclude reference="ts4-MY-gkl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -164,16 +165,16 @@
                                 <include reference="AbS-7x-G2s"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="gWk-7h-A4R"/>
+                                <include reference="q7Y-Pq-BPd"/>
+                                <include reference="1rG-6Z-iw5"/>
+                                <include reference="cpq-DA-zPi"/>
+                                <include reference="fUY-FS-PRt"/>
+                                <include reference="ts4-MY-gkl"/>
                                 <include reference="0qt-P6-Edu"/>
                                 <include reference="KGi-bY-EUD"/>
                                 <include reference="BD1-7F-ar7"/>
                                 <include reference="BeM-mY-nlm"/>
-                                <include reference="1rG-6Z-iw5"/>
-                                <include reference="cpq-DA-zPi"/>
-                                <include reference="gWk-7h-A4R"/>
-                                <include reference="q7Y-Pq-BPd"/>
-                                <include reference="fUY-FS-PRt"/>
-                                <include reference="ts4-MY-gkl"/>
                             </mask>
                         </variation>
                     </view>
