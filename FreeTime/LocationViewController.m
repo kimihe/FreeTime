@@ -34,17 +34,24 @@
 {
     [super viewWillDisappear:animated];
     
+    self.cinemaLocationM.reloadCinemaItemsData = YES;
+    
     NSString *latitude = self.latitudeTextField.text;
     if ([latitude isEqualToString:@""])
+    {
         latitude = @"32.076269";
+        self.cinemaLocationM.reloadCinemaItemsData = NO;
+    }
     
     NSString *longitude = self.longitudeTextField.text;
     if ([longitude isEqualToString:@""])
+    {
         longitude = @"118.790456";
+        self.cinemaLocationM.reloadCinemaItemsData = NO;
+    }
     
     self.cinemaLocationM.latitude = latitude;
-    self.cinemaLocationM.longitude = longitude;
-    self.cinemaLocationM.reloadCinemaItemsData = YES;
+    self.cinemaLocationM.longitude = longitude;    
 }
 
 - (void)didReceiveMemoryWarning {
