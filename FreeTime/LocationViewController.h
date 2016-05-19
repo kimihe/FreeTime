@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define WEBVIEW_URL "http://api.map.baidu.com/lbsapi/getpoint/index.html"
+
 @interface LocationViewController : UIViewController
 
 @end

@@ -75,6 +75,7 @@ static CinemaLocationModel *singletonObj_CinemaLocationModel = nil;
             //默认定位: 上海宝山UME国际影城
             singletonObj_CinemaLocationModel.latitude  = @"31.38787";//纬度
             singletonObj_CinemaLocationModel.longitude = @"121.502962";//经度
+            singletonObj_CinemaLocationModel.reloadCinemaItemsData = NO;
         }
     }
     

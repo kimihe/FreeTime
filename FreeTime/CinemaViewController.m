@@ -33,6 +33,9 @@
     // Do any additional setup after loading the view.
     
     [self initData];
+    
+    //首次load默认刷新上海宝山
+    [self getCinemaItemsData];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -42,7 +45,12 @@
     [self initNavigationBar];
     [self initTabBar];
     
-    [self getCinemaItemsData];
+    //每次appear条件刷新
+    if (self.cinemaLocationM.reloadCinemaItemsData == YES)
+    {
+        [self getCinemaItemsData];
+    }
+    
 }
 
 

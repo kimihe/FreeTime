@@ -58,6 +58,7 @@
 
 @property (strong, nonatomic)NSString *latitude;//纬度
 @property (strong, nonatomic)NSString *longitude;//经度
+@property (assign, nonatomic)BOOL reloadCinemaItemsData;//标记是否刷新CinemaVC
 
 +(CinemaLocationModel *)getSingletonObj;
 - (void)initWithCinemaLocationData:(id)data;

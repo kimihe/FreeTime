@@ -10,10 +10,11 @@
 
 #import "CinemaModel.h"
 
-@interface LocationViewController ()
+@interface LocationViewController () <UIWebViewDelegate>
 
 @property (strong, nonatomic)CinemaLocationModel *cinemaLocationM;
 
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UITextField *latitudeTextField;//纬度
 @property (weak, nonatomic) IBOutlet UITextField *longitudeTextField;//经度
 
@@ -26,6 +27,7 @@
     // Do any additional setup after loading the view.
     
     [self initData];
+    [self initWebView];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -42,6 +44,7 @@
     
     self.cinemaLocationM.latitude = latitude;
     self.cinemaLocationM.longitude = longitude;
+    self.cinemaLocationM.reloadCinemaItemsData = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +55,14 @@
 - (void)initData
 {
     self.cinemaLocationM = [CinemaLocationModel getSingletonObj];
+}
+
+- (void)initWebView
+{
+    self.webView.delegate = self;
+    NSURL * url = [NSURL URLWithString:@WEBVIEW_URL];
+    NSURLRequest * request = [NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
 }
 
 
@@ -71,5 +82,16 @@
 {
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
+
+#pragma mark - UIWebViewDelegate
+- (void)webViewDidFinishLoad: (UIWebView *) webView {
+    NSLog(@"finish");
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"%@", [error description]);
+}
+
 
 @end
