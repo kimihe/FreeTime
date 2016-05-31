@@ -67,6 +67,10 @@
 
 #define WINDOW [UIApplication sharedApplication].keyWindow
 
+//追踪对象－方法，打印log
+#define TRACELOG NSLog(@"<%@> - [%@]", NSStringFromClass([self class]), NSStringFromSelector(_cmd));
+
+
 //6.经纬度
 #define LATITUDE_DEFAULT 39.983497
 #define LONGITUDE_DEFAULT 116.318042

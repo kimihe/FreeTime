@@ -104,8 +104,7 @@
 //    [self.cinemaTableView reloadData];
 //    return;
     
-    
-    
+    TRACELOG;
     
     NSString *url = @"http://v.juhe.cn/movie/cinemas.local";
     NSString *latitude = self.cinemaLocationM.latitude;
@@ -116,7 +115,7 @@
     [httpRequest postDataWithURL:url params:userInfo success:^(id object) {
         NSLog(@"JSON: %@", object);
         [self.cinemaItemsM initWithCinemaItemsData:object];
-        NSString *toast = [NSString stringWithFormat:@"搜索到%d条信息", self.cinemaItemsM.count];
+        NSString *toast = [NSString stringWithFormat:@"搜索到%ld条信息", (long)self.cinemaItemsM.count];
         [[[iToast makeText:NSLocalizedString(toast, @"")]
           setGravity:iToastGravityCenter] show];
         [self.cinemaTableView reloadData];
